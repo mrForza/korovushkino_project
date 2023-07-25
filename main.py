@@ -1,72 +1,66 @@
 import os
 import time
+import logging
+import sys
 
-from cryptography.fernet import Fernet
 from dotenv import load_dotenv
 from telegram import Bot
+from datetime import datetime
 
 from order_parser import Parser
+from messages import *
+
+CURRENT_DATE = datetime.now().__str__().replace(
+    ' ', '-'
+).replace(':', '-').replace('.', '-')
+
+logging.basicConfig(
+    format=u'%(asctime)s, %(levelname)s, %(message)s',
+    filemode='w',
+    filename=f'logs/log_{CURRENT_DATE}.log',
+    level=logging.DEBUG
+)
+
+load_dotenv()
 
 
-def generate_access_key():
-    key = Fernet.generate_key()
-    with open('file.key', 'wb') as file:
-        file.write(key)
+TELEGRAM_TOKEN = os.getenv('token')
+
+CHAT_ID = os.getenv('chat_id')
+
+CMS_LINK = os.getenv('cms_link')
+
+CMS_LOGIN = os.getenv('cms_login')
+
+CMS_PASSWORD = os.getenv('cms_password')
 
 
-def encrypte_private_data(file_name: str):
-    with open('file.key', 'rb') as file_key:
-        key = file_key.read()
-    fernet = Fernet(key)
-
-    with open(file_name, 'rb') as private_data:
-        original_data = private_data.read()
-
-    encrypte_data = fernet.encrypt(original_data)
-
-    with open(file_name, 'wb') as private_data:
-        private_data.write(encrypte_data)
-
-
-def decrypte_private_data(file_name: str) -> list:
-    with open('file.key', 'rb') as file_key:
-        key = file_key.read()
-    fernet = Fernet(key)
-
-    with open(file_name, 'rb') as private_data:
-        encrypte_data = private_data.read()
-
-    decrypte_data: str = str(fernet.decrypt(encrypte_data)).replace('\'', '')
-    return reformat_private_data(decrypte_data)
-
-
-def reformat_private_data(data: str) -> list:
-    reformatted_data = []
-    first_index = 1
-
-    for i in range(1, len(data)):
-        if (data[i - 1] == '\\' and data[i] == 'n'):
-            reformatted_data.append(data[first_index:i-3])
-            first_index = i + 1
-        elif i == len(data) - 1:
-            reformatted_data.append(data[first_index:])
-    return reformatted_data
+def check_tokens():
+    """Проверяет корректность токенов программы"""
+    logging.debug(CHECK_TOKENS_START_TEXT)
+    for name, value in (
+        ('tg_token', TELEGRAM_TOKEN),
+        ('chat_id', CHAT_ID),
+        ('cms_link', CMS_LINK),
+        ('cms_login', CMS_LOGIN),
+        ('cms_password', CMS_PASSWORD)
+    ):
+        if value is None:
+            logging.critical(MISSING_TOKENS_TEXT.format(name))
+            return
+    logging.debug(CHECK_TOKENS_END_TEXT)
 
 
 if __name__ == '__main__':
-    load_dotenv()
-    # encrypte_private_data('private_data.txt') #Do not uncomment this line!
-    private_data = decrypte_private_data('private_data.txt')
-    TOKEN = os.getenv('token')
-    CHAT_ID = os.getenv('chat_id')
+    check_tokens()
 
-    bot = Bot(TOKEN)
-    bot.send_message(chat_id=os.getenv('chat_id'), text='Привет!')
+    bot = Bot(TELEGRAM_TOKEN)
     parser = Parser(
-        link=private_data[0],
-        email=private_data[1],
-        password=private_data[2]
+        link=CMS_LINK,
+        email=CMS_LOGIN,
+        password=CMS_PASSWORD
     )
+    
     parser.configure_parser()
     order = parser.start_parsing()
 

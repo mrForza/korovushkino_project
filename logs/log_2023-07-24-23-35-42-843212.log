@@ -1,0 +1,39 @@
+2023-07-24 23:35:42,851, DEBUG, Началась проверка токенов программы.
+2023-07-24 23:35:42,852, DEBUG, Проверка токенов завершена, все токены найдены.
+2023-07-24 23:35:43,401, DEBUG, POST http://127.0.0.1:50223/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2023-07-24 23:35:43,402, DEBUG, Starting new HTTP connection (1): 127.0.0.1:50223
+2023-07-24 23:35:44,193, DEBUG, http://127.0.0.1:50223 "POST /session HTTP/1.1" 200 845
+2023-07-24 23:35:44,196, DEBUG, Finished Request
+2023-07-24 23:35:44,197, DEBUG, POST http://127.0.0.1:50223/session/70cdc37dca644a18cdeabd92d8fdfb57/url {"url": "https://korovushkino.ru/admin035dilost/index.php?controller=AdminLogin&token=8139f4544de1fc881ebc0a3c684ce2dd"}
+2023-07-24 23:35:45,548, DEBUG, http://127.0.0.1:50223 "POST /session/70cdc37dca644a18cdeabd92d8fdfb57/url HTTP/1.1" 200 14
+2023-07-24 23:35:45,550, DEBUG, Finished Request
+2023-07-24 23:35:45,550, DEBUG, GET http://127.0.0.1:50223/session/70cdc37dca644a18cdeabd92d8fdfb57/title {}
+2023-07-24 23:35:45,559, DEBUG, http://127.0.0.1:50223 "GET /session/70cdc37dca644a18cdeabd92d8fdfb57/title HTTP/1.1" 200 50
+2023-07-24 23:35:45,560, DEBUG, Finished Request
+2023-07-24 23:35:45,560, DEBUG, POST http://127.0.0.1:50223/session/70cdc37dca644a18cdeabd92d8fdfb57/element {"using": "css selector", "value": "#email"}
+2023-07-24 23:35:45,581, DEBUG, http://127.0.0.1:50223 "POST /session/70cdc37dca644a18cdeabd92d8fdfb57/element HTTP/1.1" 200 94
+2023-07-24 23:35:45,582, DEBUG, Finished Request
+2023-07-24 23:35:45,582, DEBUG, POST http://127.0.0.1:50223/session/70cdc37dca644a18cdeabd92d8fdfb57/element {"using": "css selector", "value": "#passwd"}
+2023-07-24 23:35:45,598, DEBUG, http://127.0.0.1:50223 "POST /session/70cdc37dca644a18cdeabd92d8fdfb57/element HTTP/1.1" 200 94
+2023-07-24 23:35:45,599, DEBUG, Finished Request
+2023-07-24 23:35:45,599, DEBUG, POST http://127.0.0.1:50223/session/70cdc37dca644a18cdeabd92d8fdfb57/element {"using": "css selector", "value": "#submit_login"}
+2023-07-24 23:35:45,616, DEBUG, http://127.0.0.1:50223 "POST /session/70cdc37dca644a18cdeabd92d8fdfb57/element HTTP/1.1" 200 94
+2023-07-24 23:35:45,617, DEBUG, Finished Request
+2023-07-24 23:35:45,617, DEBUG, POST http://127.0.0.1:50223/session/70cdc37dca644a18cdeabd92d8fdfb57/element/63395BF772D4D0330D53D2299DA30D8E_element_4/value {"text": "mars4mlech.put@gmail.com", "value": ["m", "a", "r", "s", "4", "m", "l", "e", "c", "h", ".", "p", "u", "t", "@", "g", "m", "a", "i", "l", ".", "c", "o", "m"], "id": "63395BF772D4D0330D53D2299DA30D8E_element_4"}
+2023-07-24 23:35:45,758, DEBUG, http://127.0.0.1:50223 "POST /session/70cdc37dca644a18cdeabd92d8fdfb57/element/63395BF772D4D0330D53D2299DA30D8E_element_4/value HTTP/1.1" 200 14
+2023-07-24 23:35:45,760, DEBUG, Finished Request
+2023-07-24 23:35:45,761, DEBUG, POST http://127.0.0.1:50223/session/70cdc37dca644a18cdeabd92d8fdfb57/element/63395BF772D4D0330D53D2299DA30D8E_element_5/value {"text": "UPf9XHbUc8dyuj6", "value": ["U", "P", "f", "9", "X", "H", "b", "U", "c", "8", "d", "y", "u", "j", "6"], "id": "63395BF772D4D0330D53D2299DA30D8E_element_5"}
+2023-07-24 23:35:45,874, DEBUG, http://127.0.0.1:50223 "POST /session/70cdc37dca644a18cdeabd92d8fdfb57/element/63395BF772D4D0330D53D2299DA30D8E_element_5/value HTTP/1.1" 200 14
+2023-07-24 23:35:45,874, DEBUG, Finished Request
+2023-07-24 23:35:45,874, DEBUG, POST http://127.0.0.1:50223/session/70cdc37dca644a18cdeabd92d8fdfb57/element/63395BF772D4D0330D53D2299DA30D8E_element_7/click {"id": "63395BF772D4D0330D53D2299DA30D8E_element_7"}
+2023-07-24 23:35:45,972, DEBUG, http://127.0.0.1:50223 "POST /session/70cdc37dca644a18cdeabd92d8fdfb57/element/63395BF772D4D0330D53D2299DA30D8E_element_7/click HTTP/1.1" 200 14
+2023-07-24 23:35:45,973, DEBUG, Finished Request
+2023-07-24 23:35:50,979, DEBUG, POST http://127.0.0.1:50223/session/70cdc37dca644a18cdeabd92d8fdfb57/element {"using": "css selector", "value": "#subtab-AdminParentOrders > a"}
+2023-07-24 23:35:51,006, DEBUG, http://127.0.0.1:50223 "POST /session/70cdc37dca644a18cdeabd92d8fdfb57/element HTTP/1.1" 200 95
+2023-07-24 23:35:51,006, DEBUG, Finished Request
+2023-07-24 23:35:51,006, DEBUG, POST http://127.0.0.1:50223/session/70cdc37dca644a18cdeabd92d8fdfb57/element/EF48F3E359870730C98F5357102C21BC_element_31/click {"id": "EF48F3E359870730C98F5357102C21BC_element_31"}
+2023-07-24 23:35:52,989, DEBUG, http://127.0.0.1:50223 "POST /session/70cdc37dca644a18cdeabd92d8fdfb57/element/EF48F3E359870730C98F5357102C21BC_element_31/click HTTP/1.1" 200 14
+2023-07-24 23:35:52,990, DEBUG, Finished Request
+2023-07-24 23:35:52,990, DEBUG, POST http://127.0.0.1:50223/session/70cdc37dca644a18cdeabd92d8fdfb57/element {"using": "css selector", "value": "#table-order > tbody > tr:nth-child(1) > td.pointer.fixed-width-xs.text-center"}
+2023-07-24 23:35:52,992, DEBUG, http://127.0.0.1:50223 "POST /session/70cdc37dca644a18cdeabd92d8fdfb57/element HTTP/1.1" 404 865
+2023-07-24 23:35:52,993, DEBUG, Finished Request
