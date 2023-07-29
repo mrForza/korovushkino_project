@@ -1,0 +1,399 @@
+2023-07-29 16:59:11,801, DEBUG, Началась проверка токенов программы.
+2023-07-29 16:59:11,801, DEBUG, Проверка токенов завершена, все токены найдены.
+2023-07-29 16:59:12,364, DEBUG, POST http://127.0.0.1:55152/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2023-07-29 16:59:12,365, DEBUG, Starting new HTTP connection (1): 127.0.0.1:55152
+2023-07-29 16:59:12,919, DEBUG, http://127.0.0.1:55152 "POST /session HTTP/1.1" 200 846
+2023-07-29 16:59:12,921, DEBUG, Finished Request
+2023-07-29 16:59:12,921, DEBUG, Началась конфигурация парсера.
+2023-07-29 16:59:12,921, DEBUG, Конфигурация парсера завершилась. Парсер настроен.
+2023-07-29 16:59:12,921, DEBUG, Парсер начал выполнять аутентификацию
+2023-07-29 16:59:12,921, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/url {"url": "https://korovushkino.ru/admin035dilost/index.php?controller=AdminLogin&token=8139f4544de1fc881ebc0a3c684ce2dd"}
+2023-07-29 16:59:13,775, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/url HTTP/1.1" 200 14
+2023-07-29 16:59:13,775, DEBUG, Finished Request
+2023-07-29 16:59:13,775, DEBUG, Парсер успешно перешёл на ресурс cms системы
+2023-07-29 16:59:18,786, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#email"}
+2023-07-29 16:59:18,793, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 94
+2023-07-29 16:59:18,793, DEBUG, Finished Request
+2023-07-29 16:59:18,793, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#passwd"}
+2023-07-29 16:59:18,802, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 94
+2023-07-29 16:59:18,802, DEBUG, Finished Request
+2023-07-29 16:59:18,802, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#submit_login"}
+2023-07-29 16:59:18,802, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 94
+2023-07-29 16:59:18,802, DEBUG, Finished Request
+2023-07-29 16:59:23,803, DEBUG, Парсер начал вводить данные для аутентификации
+2023-07-29 16:59:23,803, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/395FA3136ADB9AC3F129E074B0687A36_element_2/value {"text": "mars4mlech.put@gmail.com", "value": ["m", "a", "r", "s", "4", "m", "l", "e", "c", "h", ".", "p", "u", "t", "@", "g", "m", "a", "i", "l", ".", "c", "o", "m"], "id": "395FA3136ADB9AC3F129E074B0687A36_element_2"}
+2023-07-29 16:59:23,857, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element/395FA3136ADB9AC3F129E074B0687A36_element_2/value HTTP/1.1" 200 14
+2023-07-29 16:59:23,857, DEBUG, Finished Request
+2023-07-29 16:59:23,857, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/395FA3136ADB9AC3F129E074B0687A36_element_3/value {"text": "UPf9XHbUc8dyuj6", "value": ["U", "P", "f", "9", "X", "H", "b", "U", "c", "8", "d", "y", "u", "j", "6"], "id": "395FA3136ADB9AC3F129E074B0687A36_element_3"}
+2023-07-29 16:59:23,895, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element/395FA3136ADB9AC3F129E074B0687A36_element_3/value HTTP/1.1" 200 14
+2023-07-29 16:59:23,895, DEBUG, Finished Request
+2023-07-29 16:59:23,895, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/395FA3136ADB9AC3F129E074B0687A36_element_9/click {"id": "395FA3136ADB9AC3F129E074B0687A36_element_9"}
+2023-07-29 16:59:23,937, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element/395FA3136ADB9AC3F129E074B0687A36_element_9/click HTTP/1.1" 200 14
+2023-07-29 16:59:23,937, DEBUG, Finished Request
+2023-07-29 16:59:23,937, DEBUG, Парсер успешно аутентифицировался в CMS системе
+2023-07-29 16:59:28,958, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/refresh {}
+2023-07-29 16:59:29,599, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/refresh HTTP/1.1" 200 14
+2023-07-29 16:59:29,599, DEBUG, Finished Request
+2023-07-29 16:59:29,599, DEBUG, Парсер начал парсить информацию о новых заказах
+2023-07-29 16:59:29,599, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#subtab-AdminParentOrders > a"}
+2023-07-29 16:59:29,608, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 95
+2023-07-29 16:59:29,610, DEBUG, Finished Request
+2023-07-29 16:59:29,610, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/E372665FEA487C4E5C750F74B7A429DE_element_40/click {"id": "E372665FEA487C4E5C750F74B7A429DE_element_40"}
+2023-07-29 16:59:30,976, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element/E372665FEA487C4E5C750F74B7A429DE_element_40/click HTTP/1.1" 200 14
+2023-07-29 16:59:30,976, DEBUG, Finished Request
+2023-07-29 16:59:30,976, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#table-order > tbody > tr:nth-child(1) > td.pointer.fixed-width-xs.text-center"}
+2023-07-29 16:59:30,998, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 95
+2023-07-29 16:59:30,998, DEBUG, Finished Request
+2023-07-29 16:59:30,998, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_57/text {"id": "0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_57"}
+2023-07-29 16:59:31,021, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_57/text HTTP/1.1" 200 15
+2023-07-29 16:59:31,021, DEBUG, Finished Request
+2023-07-29 16:59:31,021, DEBUG, Началась проверка существования заказа в БД
+2023-07-29 16:59:31,023, DEBUG, Заказ не найден в БД
+2023-07-29 16:59:31,023, DEBUG, Парсер начал собирать основную информацию о заказе
+2023-07-29 16:59:31,023, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#table-order > tbody > tr:nth-child(1) > td:nth-child(3)"}
+2023-07-29 16:59:31,024, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 95
+2023-07-29 16:59:31,024, DEBUG, Finished Request
+2023-07-29 16:59:31,024, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_58/text {"id": "0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_58"}
+2023-07-29 16:59:31,042, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_58/text HTTP/1.1" 200 17
+2023-07-29 16:59:31,043, DEBUG, Finished Request
+2023-07-29 16:59:31,043, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#table-order > tbody > tr:nth-child(1) > td:nth-child(4)"}
+2023-07-29 16:59:31,053, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 95
+2023-07-29 16:59:31,053, DEBUG, Finished Request
+2023-07-29 16:59:31,053, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_59/text {"id": "0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_59"}
+2023-07-29 16:59:31,062, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_59/text HTTP/1.1" 200 18
+2023-07-29 16:59:31,062, DEBUG, Finished Request
+2023-07-29 16:59:31,062, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#table-order > tbody > tr:nth-child(1) > td:nth-child(5)"}
+2023-07-29 16:59:31,070, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 95
+2023-07-29 16:59:31,070, DEBUG, Finished Request
+2023-07-29 16:59:31,070, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_60/text {"id": "0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_60"}
+2023-07-29 16:59:31,079, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_60/text HTTP/1.1" 200 24
+2023-07-29 16:59:31,080, DEBUG, Finished Request
+2023-07-29 16:59:31,080, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#table-order > tbody > tr:nth-child(1) > td:nth-child(6)"}
+2023-07-29 16:59:31,089, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 95
+2023-07-29 16:59:31,089, DEBUG, Finished Request
+2023-07-29 16:59:31,089, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_61/text {"id": "0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_61"}
+2023-07-29 16:59:31,095, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_61/text HTTP/1.1" 200 26
+2023-07-29 16:59:31,095, DEBUG, Finished Request
+2023-07-29 16:59:31,096, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#table-order > tbody > tr:nth-child(1) > td:nth-child(7)"}
+2023-07-29 16:59:31,104, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 95
+2023-07-29 16:59:31,104, DEBUG, Finished Request
+2023-07-29 16:59:31,104, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_62/text {"id": "0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_62"}
+2023-07-29 16:59:31,107, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_62/text HTTP/1.1" 200 25
+2023-07-29 16:59:31,107, DEBUG, Finished Request
+2023-07-29 16:59:31,107, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#table-order > tbody > tr:nth-child(1) > td:nth-child(8)"}
+2023-07-29 16:59:31,121, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 95
+2023-07-29 16:59:31,121, DEBUG, Finished Request
+2023-07-29 16:59:31,121, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_63/text {"id": "0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_63"}
+2023-07-29 16:59:31,122, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_63/text HTTP/1.1" 200 69
+2023-07-29 16:59:31,122, DEBUG, Finished Request
+2023-07-29 16:59:31,122, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#table-order > tbody > tr:nth-child(1) > td:nth-child(9)"}
+2023-07-29 16:59:31,122, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 95
+2023-07-29 16:59:31,135, DEBUG, Finished Request
+2023-07-29 16:59:31,135, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_64/text {"id": "0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_64"}
+2023-07-29 16:59:31,139, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_64/text HTTP/1.1" 200 33
+2023-07-29 16:59:31,139, DEBUG, Finished Request
+2023-07-29 16:59:31,139, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#table-order > tbody > tr:nth-child(1) > td:nth-child(10)"}
+2023-07-29 16:59:31,139, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 95
+2023-07-29 16:59:31,151, DEBUG, Finished Request
+2023-07-29 16:59:31,151, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_65/text {"id": "0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_65"}
+2023-07-29 16:59:31,157, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_65/text HTTP/1.1" 200 28
+2023-07-29 16:59:31,157, DEBUG, Finished Request
+2023-07-29 16:59:31,157, DEBUG, Идёт обработка кода
+2023-07-29 16:59:31,157, DEBUG, Идёт обработка статуса нового клиента
+2023-07-29 16:59:31,157, DEBUG, Идёт обработка цены
+2023-07-29 16:59:31,157, DEBUG, Идёт обработка даты
+2023-07-29 16:59:31,157, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#table-order > tbody > tr:nth-child(1)"}
+2023-07-29 16:59:31,157, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 95
+2023-07-29 16:59:31,171, DEBUG, Finished Request
+2023-07-29 16:59:31,171, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_66/click {"id": "0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_66"}
+2023-07-29 16:59:32,446, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element/0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_66/click HTTP/1.1" 200 14
+2023-07-29 16:59:32,446, DEBUG, Finished Request
+2023-07-29 16:59:32,446, DEBUG, Парсер начал парсить информацию о клиенте
+2023-07-29 16:59:32,446, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#addressShipping > div > div > div:nth-child(1)"}
+2023-07-29 16:59:32,470, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:32,471, DEBUG, Finished Request
+2023-07-29 16:59:32,471, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_101/text {"id": "84158F9E9304707EE9E5D56489C11741_element_101"}
+2023-07-29 16:59:32,482, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_101/text HTTP/1.1" 200 133
+2023-07-29 16:59:32,483, DEBUG, Finished Request
+2023-07-29 16:59:32,483, DEBUG, Парсер закончил парсить информацию о клиенте
+2023-07-29 16:59:32,483, DEBUG, Парсер начал собирать информацию о продуктах
+2023-07-29 16:59:32,483, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(1) > td:nth-child(2)"}
+2023-07-29 16:59:32,493, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:32,493, DEBUG, Finished Request
+2023-07-29 16:59:32,493, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_104/text {"id": "84158F9E9304707EE9E5D56489C11741_element_104"}
+2023-07-29 16:59:32,503, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_104/text HTTP/1.1" 200 68
+2023-07-29 16:59:32,504, DEBUG, Finished Request
+2023-07-29 16:59:32,504, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(1) > td:nth-child(3)"}
+2023-07-29 16:59:32,509, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:32,509, DEBUG, Finished Request
+2023-07-29 16:59:32,509, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_105/text {"id": "84158F9E9304707EE9E5D56489C11741_element_105"}
+2023-07-29 16:59:32,523, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_105/text HTTP/1.1" 200 22
+2023-07-29 16:59:32,524, DEBUG, Finished Request
+2023-07-29 16:59:32,524, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(1) > td:nth-child(4)"}
+2023-07-29 16:59:32,529, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:32,534, DEBUG, Finished Request
+2023-07-29 16:59:32,534, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_106/text {"id": "84158F9E9304707EE9E5D56489C11741_element_106"}
+2023-07-29 16:59:32,541, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_106/text HTTP/1.1" 200 13
+2023-07-29 16:59:32,541, DEBUG, Finished Request
+2023-07-29 16:59:32,541, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(1) > td.productQuantity.product_stock.text-center"}
+2023-07-29 16:59:32,551, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:32,552, DEBUG, Finished Request
+2023-07-29 16:59:32,552, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_107/text {"id": "84158F9E9304707EE9E5D56489C11741_element_107"}
+2023-07-29 16:59:32,562, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_107/text HTTP/1.1" 200 15
+2023-07-29 16:59:32,562, DEBUG, Finished Request
+2023-07-29 16:59:32,562, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(2) > td:nth-child(2)"}
+2023-07-29 16:59:32,573, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:32,574, DEBUG, Finished Request
+2023-07-29 16:59:32,574, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_108/text {"id": "84158F9E9304707EE9E5D56489C11741_element_108"}
+2023-07-29 16:59:32,591, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_108/text HTTP/1.1" 200 106
+2023-07-29 16:59:32,592, DEBUG, Finished Request
+2023-07-29 16:59:32,592, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(2) > td:nth-child(3)"}
+2023-07-29 16:59:32,603, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:32,603, DEBUG, Finished Request
+2023-07-29 16:59:32,603, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_109/text {"id": "84158F9E9304707EE9E5D56489C11741_element_109"}
+2023-07-29 16:59:32,614, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_109/text HTTP/1.1" 200 23
+2023-07-29 16:59:32,614, DEBUG, Finished Request
+2023-07-29 16:59:32,614, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(2) > td:nth-child(4)"}
+2023-07-29 16:59:32,624, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:32,624, DEBUG, Finished Request
+2023-07-29 16:59:32,624, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_110/text {"id": "84158F9E9304707EE9E5D56489C11741_element_110"}
+2023-07-29 16:59:32,632, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_110/text HTTP/1.1" 200 13
+2023-07-29 16:59:32,632, DEBUG, Finished Request
+2023-07-29 16:59:32,632, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(2) > td.productQuantity.product_stock.text-center"}
+2023-07-29 16:59:32,641, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:32,642, DEBUG, Finished Request
+2023-07-29 16:59:32,642, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_111/text {"id": "84158F9E9304707EE9E5D56489C11741_element_111"}
+2023-07-29 16:59:32,650, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_111/text HTTP/1.1" 200 15
+2023-07-29 16:59:32,650, DEBUG, Finished Request
+2023-07-29 16:59:32,650, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(3) > td:nth-child(2)"}
+2023-07-29 16:59:32,659, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:32,660, DEBUG, Finished Request
+2023-07-29 16:59:32,660, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_112/text {"id": "84158F9E9304707EE9E5D56489C11741_element_112"}
+2023-07-29 16:59:32,668, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_112/text HTTP/1.1" 200 77
+2023-07-29 16:59:32,668, DEBUG, Finished Request
+2023-07-29 16:59:32,668, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(3) > td:nth-child(3)"}
+2023-07-29 16:59:32,677, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:32,677, DEBUG, Finished Request
+2023-07-29 16:59:32,677, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_113/text {"id": "84158F9E9304707EE9E5D56489C11741_element_113"}
+2023-07-29 16:59:32,685, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_113/text HTTP/1.1" 200 23
+2023-07-29 16:59:32,685, DEBUG, Finished Request
+2023-07-29 16:59:32,685, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(3) > td:nth-child(4)"}
+2023-07-29 16:59:32,696, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:32,696, DEBUG, Finished Request
+2023-07-29 16:59:32,696, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_114/text {"id": "84158F9E9304707EE9E5D56489C11741_element_114"}
+2023-07-29 16:59:32,703, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_114/text HTTP/1.1" 200 13
+2023-07-29 16:59:32,703, DEBUG, Finished Request
+2023-07-29 16:59:32,704, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(3) > td.productQuantity.product_stock.text-center"}
+2023-07-29 16:59:32,713, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:32,714, DEBUG, Finished Request
+2023-07-29 16:59:32,714, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_115/text {"id": "84158F9E9304707EE9E5D56489C11741_element_115"}
+2023-07-29 16:59:32,721, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_115/text HTTP/1.1" 200 15
+2023-07-29 16:59:32,721, DEBUG, Finished Request
+2023-07-29 16:59:32,722, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(4) > td:nth-child(2)"}
+2023-07-29 16:59:32,731, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:32,731, DEBUG, Finished Request
+2023-07-29 16:59:32,731, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_116/text {"id": "84158F9E9304707EE9E5D56489C11741_element_116"}
+2023-07-29 16:59:32,739, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_116/text HTTP/1.1" 200 71
+2023-07-29 16:59:32,739, DEBUG, Finished Request
+2023-07-29 16:59:32,739, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(4) > td:nth-child(3)"}
+2023-07-29 16:59:33,394, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:33,394, DEBUG, Finished Request
+2023-07-29 16:59:33,394, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_117/text {"id": "84158F9E9304707EE9E5D56489C11741_element_117"}
+2023-07-29 16:59:33,396, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_117/text HTTP/1.1" 200 23
+2023-07-29 16:59:33,396, DEBUG, Finished Request
+2023-07-29 16:59:33,396, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(4) > td:nth-child(4)"}
+2023-07-29 16:59:33,407, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:33,407, DEBUG, Finished Request
+2023-07-29 16:59:33,407, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_118/text {"id": "84158F9E9304707EE9E5D56489C11741_element_118"}
+2023-07-29 16:59:33,407, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_118/text HTTP/1.1" 200 13
+2023-07-29 16:59:33,407, DEBUG, Finished Request
+2023-07-29 16:59:33,407, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(4) > td.productQuantity.product_stock.text-center"}
+2023-07-29 16:59:33,425, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:33,426, DEBUG, Finished Request
+2023-07-29 16:59:33,426, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_119/text {"id": "84158F9E9304707EE9E5D56489C11741_element_119"}
+2023-07-29 16:59:33,433, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_119/text HTTP/1.1" 200 14
+2023-07-29 16:59:33,433, DEBUG, Finished Request
+2023-07-29 16:59:33,433, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(5) > td:nth-child(2)"}
+2023-07-29 16:59:33,443, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:33,443, DEBUG, Finished Request
+2023-07-29 16:59:33,443, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_120/text {"id": "84158F9E9304707EE9E5D56489C11741_element_120"}
+2023-07-29 16:59:33,451, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_120/text HTTP/1.1" 200 90
+2023-07-29 16:59:33,452, DEBUG, Finished Request
+2023-07-29 16:59:33,452, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(5) > td:nth-child(3)"}
+2023-07-29 16:59:33,461, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:33,461, DEBUG, Finished Request
+2023-07-29 16:59:33,461, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_121/text {"id": "84158F9E9304707EE9E5D56489C11741_element_121"}
+2023-07-29 16:59:33,469, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_121/text HTTP/1.1" 200 22
+2023-07-29 16:59:33,469, DEBUG, Finished Request
+2023-07-29 16:59:33,469, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(5) > td:nth-child(4)"}
+2023-07-29 16:59:33,478, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:33,479, DEBUG, Finished Request
+2023-07-29 16:59:33,479, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_122/text {"id": "84158F9E9304707EE9E5D56489C11741_element_122"}
+2023-07-29 16:59:33,486, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_122/text HTTP/1.1" 200 13
+2023-07-29 16:59:33,486, DEBUG, Finished Request
+2023-07-29 16:59:33,486, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(5) > td.productQuantity.product_stock.text-center"}
+2023-07-29 16:59:33,495, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:33,495, DEBUG, Finished Request
+2023-07-29 16:59:33,495, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_123/text {"id": "84158F9E9304707EE9E5D56489C11741_element_123"}
+2023-07-29 16:59:33,502, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_123/text HTTP/1.1" 200 15
+2023-07-29 16:59:33,503, DEBUG, Finished Request
+2023-07-29 16:59:33,503, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(6) > td:nth-child(2)"}
+2023-07-29 16:59:33,511, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:33,511, DEBUG, Finished Request
+2023-07-29 16:59:33,511, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_124/text {"id": "84158F9E9304707EE9E5D56489C11741_element_124"}
+2023-07-29 16:59:33,518, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_124/text HTTP/1.1" 200 95
+2023-07-29 16:59:33,519, DEBUG, Finished Request
+2023-07-29 16:59:33,519, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(6) > td:nth-child(3)"}
+2023-07-29 16:59:33,529, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:33,529, DEBUG, Finished Request
+2023-07-29 16:59:33,529, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_125/text {"id": "84158F9E9304707EE9E5D56489C11741_element_125"}
+2023-07-29 16:59:33,537, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_125/text HTTP/1.1" 200 23
+2023-07-29 16:59:33,537, DEBUG, Finished Request
+2023-07-29 16:59:33,537, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(6) > td:nth-child(4)"}
+2023-07-29 16:59:33,546, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:33,547, DEBUG, Finished Request
+2023-07-29 16:59:33,547, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_126/text {"id": "84158F9E9304707EE9E5D56489C11741_element_126"}
+2023-07-29 16:59:33,554, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_126/text HTTP/1.1" 200 13
+2023-07-29 16:59:33,554, DEBUG, Finished Request
+2023-07-29 16:59:33,555, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(6) > td.productQuantity.product_stock.text-center"}
+2023-07-29 16:59:33,564, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:33,565, DEBUG, Finished Request
+2023-07-29 16:59:33,565, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_127/text {"id": "84158F9E9304707EE9E5D56489C11741_element_127"}
+2023-07-29 16:59:33,573, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_127/text HTTP/1.1" 200 15
+2023-07-29 16:59:33,573, DEBUG, Finished Request
+2023-07-29 16:59:33,573, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(7) > td:nth-child(2)"}
+2023-07-29 16:59:33,582, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:33,582, DEBUG, Finished Request
+2023-07-29 16:59:33,583, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_128/text {"id": "84158F9E9304707EE9E5D56489C11741_element_128"}
+2023-07-29 16:59:33,591, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_128/text HTTP/1.1" 200 75
+2023-07-29 16:59:33,591, DEBUG, Finished Request
+2023-07-29 16:59:33,591, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(7) > td:nth-child(3)"}
+2023-07-29 16:59:33,601, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:33,601, DEBUG, Finished Request
+2023-07-29 16:59:33,602, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_129/text {"id": "84158F9E9304707EE9E5D56489C11741_element_129"}
+2023-07-29 16:59:33,610, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_129/text HTTP/1.1" 200 23
+2023-07-29 16:59:33,611, DEBUG, Finished Request
+2023-07-29 16:59:33,611, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(7) > td:nth-child(4)"}
+2023-07-29 16:59:33,620, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:33,620, DEBUG, Finished Request
+2023-07-29 16:59:33,620, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_130/text {"id": "84158F9E9304707EE9E5D56489C11741_element_130"}
+2023-07-29 16:59:33,629, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_130/text HTTP/1.1" 200 13
+2023-07-29 16:59:33,629, DEBUG, Finished Request
+2023-07-29 16:59:33,630, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(7) > td.productQuantity.product_stock.text-center"}
+2023-07-29 16:59:33,639, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:33,639, DEBUG, Finished Request
+2023-07-29 16:59:33,639, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_131/text {"id": "84158F9E9304707EE9E5D56489C11741_element_131"}
+2023-07-29 16:59:33,646, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_131/text HTTP/1.1" 200 15
+2023-07-29 16:59:33,646, DEBUG, Finished Request
+2023-07-29 16:59:33,647, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(8) > td:nth-child(2)"}
+2023-07-29 16:59:33,655, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:33,656, DEBUG, Finished Request
+2023-07-29 16:59:33,656, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_132/text {"id": "84158F9E9304707EE9E5D56489C11741_element_132"}
+2023-07-29 16:59:33,664, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_132/text HTTP/1.1" 200 85
+2023-07-29 16:59:33,664, DEBUG, Finished Request
+2023-07-29 16:59:33,664, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(8) > td:nth-child(3)"}
+2023-07-29 16:59:33,674, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:33,674, DEBUG, Finished Request
+2023-07-29 16:59:33,674, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_133/text {"id": "84158F9E9304707EE9E5D56489C11741_element_133"}
+2023-07-29 16:59:33,682, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_133/text HTTP/1.1" 200 23
+2023-07-29 16:59:33,682, DEBUG, Finished Request
+2023-07-29 16:59:33,682, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(8) > td:nth-child(4)"}
+2023-07-29 16:59:33,691, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:33,692, DEBUG, Finished Request
+2023-07-29 16:59:33,692, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_134/text {"id": "84158F9E9304707EE9E5D56489C11741_element_134"}
+2023-07-29 16:59:33,699, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_134/text HTTP/1.1" 200 13
+2023-07-29 16:59:33,699, DEBUG, Finished Request
+2023-07-29 16:59:33,700, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(8) > td.productQuantity.product_stock.text-center"}
+2023-07-29 16:59:33,709, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:33,709, DEBUG, Finished Request
+2023-07-29 16:59:33,710, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_135/text {"id": "84158F9E9304707EE9E5D56489C11741_element_135"}
+2023-07-29 16:59:33,716, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_135/text HTTP/1.1" 200 15
+2023-07-29 16:59:33,716, DEBUG, Finished Request
+2023-07-29 16:59:33,717, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(9) > td:nth-child(2)"}
+2023-07-29 16:59:33,725, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:33,725, DEBUG, Finished Request
+2023-07-29 16:59:33,726, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_136/text {"id": "84158F9E9304707EE9E5D56489C11741_element_136"}
+2023-07-29 16:59:33,733, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_136/text HTTP/1.1" 200 102
+2023-07-29 16:59:33,733, DEBUG, Finished Request
+2023-07-29 16:59:33,733, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(9) > td:nth-child(3)"}
+2023-07-29 16:59:33,744, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:33,744, DEBUG, Finished Request
+2023-07-29 16:59:33,744, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_137/text {"id": "84158F9E9304707EE9E5D56489C11741_element_137"}
+2023-07-29 16:59:33,752, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_137/text HTTP/1.1" 200 23
+2023-07-29 16:59:33,753, DEBUG, Finished Request
+2023-07-29 16:59:33,753, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(9) > td:nth-child(4)"}
+2023-07-29 16:59:33,762, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:33,763, DEBUG, Finished Request
+2023-07-29 16:59:33,763, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_138/text {"id": "84158F9E9304707EE9E5D56489C11741_element_138"}
+2023-07-29 16:59:33,770, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_138/text HTTP/1.1" 200 13
+2023-07-29 16:59:33,770, DEBUG, Finished Request
+2023-07-29 16:59:33,770, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(9) > td.productQuantity.product_stock.text-center"}
+2023-07-29 16:59:33,779, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:33,779, DEBUG, Finished Request
+2023-07-29 16:59:33,780, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_139/text {"id": "84158F9E9304707EE9E5D56489C11741_element_139"}
+2023-07-29 16:59:33,787, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_139/text HTTP/1.1" 200 15
+2023-07-29 16:59:33,787, DEBUG, Finished Request
+2023-07-29 16:59:33,787, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(10) > td:nth-child(2)"}
+2023-07-29 16:59:33,797, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:33,798, DEBUG, Finished Request
+2023-07-29 16:59:33,798, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_140/text {"id": "84158F9E9304707EE9E5D56489C11741_element_140"}
+2023-07-29 16:59:33,806, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_140/text HTTP/1.1" 200 85
+2023-07-29 16:59:33,806, DEBUG, Finished Request
+2023-07-29 16:59:33,806, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(10) > td:nth-child(3)"}
+2023-07-29 16:59:33,814, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:33,815, DEBUG, Finished Request
+2023-07-29 16:59:33,815, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_141/text {"id": "84158F9E9304707EE9E5D56489C11741_element_141"}
+2023-07-29 16:59:33,822, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_141/text HTTP/1.1" 200 23
+2023-07-29 16:59:33,823, DEBUG, Finished Request
+2023-07-29 16:59:33,823, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(10) > td:nth-child(4)"}
+2023-07-29 16:59:33,832, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:33,832, DEBUG, Finished Request
+2023-07-29 16:59:33,832, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_142/text {"id": "84158F9E9304707EE9E5D56489C11741_element_142"}
+2023-07-29 16:59:33,839, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_142/text HTTP/1.1" 200 13
+2023-07-29 16:59:33,839, DEBUG, Finished Request
+2023-07-29 16:59:33,840, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(10) > td.productQuantity.product_stock.text-center"}
+2023-07-29 16:59:33,849, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:33,849, DEBUG, Finished Request
+2023-07-29 16:59:33,849, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_143/text {"id": "84158F9E9304707EE9E5D56489C11741_element_143"}
+2023-07-29 16:59:33,857, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_143/text HTTP/1.1" 200 15
+2023-07-29 16:59:33,857, DEBUG, Finished Request
+2023-07-29 16:59:33,857, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(11) > td:nth-child(2)"}
+2023-07-29 16:59:33,880, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:33,880, DEBUG, Finished Request
+2023-07-29 16:59:33,880, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_144/text {"id": "84158F9E9304707EE9E5D56489C11741_element_144"}
+2023-07-29 16:59:33,890, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_144/text HTTP/1.1" 200 12
+2023-07-29 16:59:33,890, DEBUG, Finished Request
+2023-07-29 16:59:33,890, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(11) > td:nth-child(3)"}
+2023-07-29 16:59:33,900, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:33,900, DEBUG, Finished Request
+2023-07-29 16:59:33,900, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_145/text {"id": "84158F9E9304707EE9E5D56489C11741_element_145"}
+2023-07-29 16:59:33,907, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_145/text HTTP/1.1" 200 12
+2023-07-29 16:59:33,908, DEBUG, Finished Request
+2023-07-29 16:59:33,908, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(11) > td:nth-child(4)"}
+2023-07-29 16:59:33,917, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:33,917, DEBUG, Finished Request
+2023-07-29 16:59:33,917, DEBUG, GET http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_146/text {"id": "84158F9E9304707EE9E5D56489C11741_element_146"}
+2023-07-29 16:59:33,925, DEBUG, http://127.0.0.1:55152 "GET /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_146/text HTTP/1.1" 200 12
+2023-07-29 16:59:33,926, DEBUG, Finished Request
+2023-07-29 16:59:33,926, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#orderProducts > tbody > tr:nth-child(11) > td.productQuantity.product_stock.text-center"}
+2023-07-29 16:59:33,936, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 404 1016
+2023-07-29 16:59:33,936, DEBUG, Finished Request
+2023-07-29 16:59:33,936, DEBUG, Message: no such element: Unable to locate element: {"method":"css selector","selector":"#orderProducts > tbody > tr:nth-child(11) > td.productQuantity.product_stock.text-center"}
+  (Session info: chrome=115.0.5790.110)
+
+2023-07-29 16:59:33,937, DEBUG, Начинаем отправку данных о заказе
+2023-07-29 16:59:33,942, DEBUG, Entering: send_message
+2023-07-29 16:59:34,366, DEBUG, {'message_id': 42, 'entities': [{'offset': 0, 'type': 'bold', 'length': 10}, {'offset': 24, 'type': 'bold', 'length': 19}, {'offset': 49, 'type': 'bold', 'length': 5}, {'offset': 72, 'type': 'bold', 'length': 6}, {'offset': 89, 'type': 'bold', 'length': 4}, {'offset': 109, 'type': 'bold', 'length': 30}, {'offset': 155, 'type': 'bold', 'length': 11}, {'offset': 168, 'type': 'bold', 'length': 7}, {'offset': 182, 'type': 'bold', 'length': 6}, {'offset': 198, 'type': 'bold', 'length': 5}, {'offset': 212, 'type': 'bold', 'length': 6}, {'offset': 226, 'type': 'bold', 'length': 6}, {'offset': 240, 'type': 'bold', 'length': 32}, {'offset': 282, 'type': 'bold', 'length': 1}, {'offset': 285, 'type': 'bold', 'length': 17}, {'offset': 304, 'type': 'bold', 'length': 2}, {'offset': 308, 'type': 'bold', 'length': 34}, {'offset': 357, 'type': 'bold', 'length': 2}, {'offset': 379, 'type': 'bold', 'length': 1}, {'offset': 403, 'type': 'bold', 'length': 3}, {'offset': 408, 'type': 'bold', 'length': 2}, {'offset': 412, 'type': 'bold', 'length': 59}, {'offset': 486, 'type': 'bold', 'length': 3}, {'offset': 509, 'type': 'bold', 'length': 1}, {'offset': 533, 'type': 'bold', 'length': 3}, {'offset': 538, 'type': 'bold', 'length': 2}, {'offset': 542, 'type': 'bold', 'length': 42}, {'offset': 599, 'type': 'bold', 'length': 3}, {'offset': 622, 'type': 'bold', 'length': 1}, {'offset': 646, 'type': 'bold', 'length': 3}, {'offset': 651, 'type': 'bold', 'length': 2}, {'offset': 655, 'type': 'bold', 'length': 33}, {'offset': 703, 'type': 'bold', 'length': 3}, {'offset': 726, 'type': 'bold', 'length': 1}, {'offset': 750, 'type': 'bold', 'length': 2}, {'offset': 754, 'type': 'bold', 'length': 2}, {'offset': 758, 'type': 'bold', 'length': 54}, {'offset': 827, 'type': 'bold', 'length': 2}, {'offset': 849, 'type': 'bold', 'length': 1}, {'offset': 873, 'type': 'bold', 'length': 3}, {'offset': 878, 'type': 'bold', 'length': 2}, {'offset': 882, 'type': 'bold', 'length': 51}, {'offset': 948, 'type': 'bold', 'length': 3}, {'offset': 971, 'type': 'bold', 'length': 1}, {'offset': 995, 'type': 'bold', 'length': 3}, {'offset': 1000, 'type': 'bold', 'length': 2}, {'offset': 1004, 'type': 'bold', 'length': 42}, {'offset': 1061, 'type': 'bold', 'length': 3}, {'offset': 1084, 'type': 'bold', 'length': 1}, {'offset': 1108, 'type': 'bold', 'length': 3}, {'offset': 1113, 'type': 'bold', 'length': 2}, {'offset': 1117, 'type': 'bold', 'length': 50}, {'offset': 1182, 'type': 'bold', 'length': 3}, {'offset': 1205, 'type': 'bold', 'length': 1}, {'offset': 1229, 'type': 'bold', 'length': 3}, {'offset': 1234, 'type': 'bold', 'length': 2}, {'offset': 1238, 'type': 'bold', 'length': 59}, {'offset': 1312, 'type': 'bold', 'length': 3}, {'offset': 1335, 'type': 'bold', 'length': 1}, {'offset': 1359, 'type': 'bold', 'length': 3}, {'offset': 1364, 'type': 'bold', 'length': 2}, {'offset': 1368, 'type': 'bold', 'length': 44}, {'offset': 1427, 'type': 'bold', 'length': 3}, {'offset': 1450, 'type': 'bold', 'length': 1}, {'offset': 1474, 'type': 'bold', 'length': 3}], 'new_chat_photo': [], 'new_chat_members': [], 'supergroup_chat_created': False, 'caption_entities': [], 'photo': [], 'date': 1690639172, 'group_chat_created': False, 'text': 'Заказ №416\nДата заказа: 2023-07-27 09:39:00\nКод: 68017\nСтрана доставки: Россия\nК оплате: 3432\nСпособ оплаты: Оплата наличными при получении\nСтатус заказа: В обработке\n\nКлиент: \nИмя: Лариса\nФамилия: Пепко\nСтрана: Россия\nГород: Москва\nАдрес: Чечёрский проезд д. 128, корп. 2\nТелефон: -\n\nСписок продуктов: \n№0: Молоко коровье 1 л\nАртикул: molkor\nЦена за 1 шт: 97\nКоличество товара: 1\nДоступное количество: 672\n\n№1: Масло сливочное натуральное 82,5% 0,5 кг\nАртикул: maslo82.5\nЦена за 1 шт: 500\nКоличество товара: 1\nДоступное количество: 755\n\n№2: Сыр Адыгейский 300 гр.\nАртикул: adigeiskii\nЦена за 1 шт: 180\nКоличество товара: 1\nДоступное количество: 966\n\n№3: Колбаса свиная сыровяленая 0,5 кг\nЦена за 1 шт: 525\nКоличество товара: 1\nДоступное количество: 68\n\n№4: Йогурт 3,5% (клубника) 250 гр.\nАртикул: iogurtklubnica\nЦена за 1 шт: 65\nКоличество товара: 3\nДоступное количество: 911\n\n№5: Творог ГОСТ 5% классический 0,5 кг\nАртикул: tvorog5\nЦена за 1 шт: 210\nКоличество товара: 1\nДоступное количество: 928\n\n№6: Сметана 20% ГОСТ (0,25 кг)\nАртикул: demo_6\nЦена за 1 шт: 100\nКоличество товара: 2\nДоступное количество: 713\n\n№7: Масло топленое 99% (250 гр)\nАртикул: maslotoplenoe\nЦена за 1 шт: 325\nКоличество товара: 1\nДоступное количество: 973\n\n№8: Цыплёнок охлаждённый (0,6 - 0,9 кг) Кг\nАртикул: ciplenokohl\nЦена за 1 шт: 350\nКоличество товара: 3\nДоступное количество: 916\n\n№9: Яйцо куриное домашнее 10шт\nАртикул: yaicokur\nЦена за 1 шт: 150\nКоличество товара: 1\nДоступное количество: 863', 'delete_chat_photo': False, 'channel_chat_created': False, 'chat': {'username': 'R_Gromov', 'first_name': 'Roman', 'type': 'private', 'last_name': 'Gromov', 'id': 539288377}, 'from': {'username': 'korovushkino_bot', 'is_bot': True, 'first_name': 'korovushkino_bot', 'id': 5824095652}}
+2023-07-29 16:59:34,366, DEBUG, Exiting: send_message
+2023-07-29 16:59:34,366, DEBUG, Entering: send_message
+2023-07-29 16:59:34,480, DEBUG, {'message_id': 43, 'entities': [{'offset': 0, 'type': 'bold', 'length': 10}, {'offset': 24, 'type': 'bold', 'length': 19}, {'offset': 49, 'type': 'bold', 'length': 5}, {'offset': 72, 'type': 'bold', 'length': 6}, {'offset': 89, 'type': 'bold', 'length': 4}, {'offset': 109, 'type': 'bold', 'length': 30}, {'offset': 155, 'type': 'bold', 'length': 11}, {'offset': 168, 'type': 'bold', 'length': 7}, {'offset': 182, 'type': 'bold', 'length': 6}, {'offset': 198, 'type': 'bold', 'length': 5}, {'offset': 212, 'type': 'bold', 'length': 6}, {'offset': 226, 'type': 'bold', 'length': 6}, {'offset': 240, 'type': 'bold', 'length': 32}, {'offset': 282, 'type': 'bold', 'length': 1}, {'offset': 285, 'type': 'bold', 'length': 17}, {'offset': 304, 'type': 'bold', 'length': 2}, {'offset': 308, 'type': 'bold', 'length': 34}, {'offset': 357, 'type': 'bold', 'length': 2}, {'offset': 379, 'type': 'bold', 'length': 1}, {'offset': 403, 'type': 'bold', 'length': 3}, {'offset': 408, 'type': 'bold', 'length': 2}, {'offset': 412, 'type': 'bold', 'length': 59}, {'offset': 486, 'type': 'bold', 'length': 3}, {'offset': 509, 'type': 'bold', 'length': 1}, {'offset': 533, 'type': 'bold', 'length': 3}, {'offset': 538, 'type': 'bold', 'length': 2}, {'offset': 542, 'type': 'bold', 'length': 42}, {'offset': 599, 'type': 'bold', 'length': 3}, {'offset': 622, 'type': 'bold', 'length': 1}, {'offset': 646, 'type': 'bold', 'length': 3}, {'offset': 651, 'type': 'bold', 'length': 2}, {'offset': 655, 'type': 'bold', 'length': 33}, {'offset': 703, 'type': 'bold', 'length': 3}, {'offset': 726, 'type': 'bold', 'length': 1}, {'offset': 750, 'type': 'bold', 'length': 2}, {'offset': 754, 'type': 'bold', 'length': 2}, {'offset': 758, 'type': 'bold', 'length': 54}, {'offset': 827, 'type': 'bold', 'length': 2}, {'offset': 849, 'type': 'bold', 'length': 1}, {'offset': 873, 'type': 'bold', 'length': 3}, {'offset': 878, 'type': 'bold', 'length': 2}, {'offset': 882, 'type': 'bold', 'length': 51}, {'offset': 948, 'type': 'bold', 'length': 3}, {'offset': 971, 'type': 'bold', 'length': 1}, {'offset': 995, 'type': 'bold', 'length': 3}, {'offset': 1000, 'type': 'bold', 'length': 2}, {'offset': 1004, 'type': 'bold', 'length': 42}, {'offset': 1061, 'type': 'bold', 'length': 3}, {'offset': 1084, 'type': 'bold', 'length': 1}, {'offset': 1108, 'type': 'bold', 'length': 3}, {'offset': 1113, 'type': 'bold', 'length': 2}, {'offset': 1117, 'type': 'bold', 'length': 50}, {'offset': 1182, 'type': 'bold', 'length': 3}, {'offset': 1205, 'type': 'bold', 'length': 1}, {'offset': 1229, 'type': 'bold', 'length': 3}, {'offset': 1234, 'type': 'bold', 'length': 2}, {'offset': 1238, 'type': 'bold', 'length': 59}, {'offset': 1312, 'type': 'bold', 'length': 3}, {'offset': 1335, 'type': 'bold', 'length': 1}, {'offset': 1359, 'type': 'bold', 'length': 3}, {'offset': 1364, 'type': 'bold', 'length': 2}, {'offset': 1368, 'type': 'bold', 'length': 44}, {'offset': 1427, 'type': 'bold', 'length': 3}, {'offset': 1450, 'type': 'bold', 'length': 1}, {'offset': 1474, 'type': 'bold', 'length': 3}], 'new_chat_photo': [], 'new_chat_members': [], 'supergroup_chat_created': False, 'caption_entities': [], 'photo': [], 'date': 1690639172, 'group_chat_created': False, 'text': 'Заказ №416\nДата заказа: 2023-07-27 09:39:00\nКод: 68017\nСтрана доставки: Россия\nК оплате: 3432\nСпособ оплаты: Оплата наличными при получении\nСтатус заказа: В обработке\n\nКлиент: \nИмя: Лариса\nФамилия: Пепко\nСтрана: Россия\nГород: Москва\nАдрес: Чечёрский проезд д. 128, корп. 2\nТелефон: -\n\nСписок продуктов: \n№0: Молоко коровье 1 л\nАртикул: molkor\nЦена за 1 шт: 97\nКоличество товара: 1\nДоступное количество: 672\n\n№1: Масло сливочное натуральное 82,5% 0,5 кг\nАртикул: maslo82.5\nЦена за 1 шт: 500\nКоличество товара: 1\nДоступное количество: 755\n\n№2: Сыр Адыгейский 300 гр.\nАртикул: adigeiskii\nЦена за 1 шт: 180\nКоличество товара: 1\nДоступное количество: 966\n\n№3: Колбаса свиная сыровяленая 0,5 кг\nЦена за 1 шт: 525\nКоличество товара: 1\nДоступное количество: 68\n\n№4: Йогурт 3,5% (клубника) 250 гр.\nАртикул: iogurtklubnica\nЦена за 1 шт: 65\nКоличество товара: 3\nДоступное количество: 911\n\n№5: Творог ГОСТ 5% классический 0,5 кг\nАртикул: tvorog5\nЦена за 1 шт: 210\nКоличество товара: 1\nДоступное количество: 928\n\n№6: Сметана 20% ГОСТ (0,25 кг)\nАртикул: demo_6\nЦена за 1 шт: 100\nКоличество товара: 2\nДоступное количество: 713\n\n№7: Масло топленое 99% (250 гр)\nАртикул: maslotoplenoe\nЦена за 1 шт: 325\nКоличество товара: 1\nДоступное количество: 973\n\n№8: Цыплёнок охлаждённый (0,6 - 0,9 кг) Кг\nАртикул: ciplenokohl\nЦена за 1 шт: 350\nКоличество товара: 3\nДоступное количество: 916\n\n№9: Яйцо куриное домашнее 10шт\nАртикул: yaicokur\nЦена за 1 шт: 150\nКоличество товара: 1\nДоступное количество: 863', 'delete_chat_photo': False, 'channel_chat_created': False, 'chat': {'username': 'gospodin_Nikolai', 'first_name': 'Nikolay', 'type': 'private', 'last_name': 'Kozarezov', 'id': 1258274970}, 'from': {'username': 'korovushkino_bot', 'is_bot': True, 'first_name': 'korovushkino_bot', 'id': 5824095652}}
+2023-07-29 16:59:34,481, DEBUG, Exiting: send_message
+2023-07-29 16:59:34,481, DEBUG, Entering: send_message
+2023-07-29 16:59:34,551, DEBUG, Возникла ошибка: Chat not found
+2023-07-29 16:59:34,551, DEBUG, Парсер перешёл на главную страницу
+2023-07-29 16:59:34,551, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element {"using": "css selector", "value": "#subtab-AdminParentOrders > a"}
+2023-07-29 16:59:34,568, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element HTTP/1.1" 200 96
+2023-07-29 16:59:34,568, DEBUG, Finished Request
+2023-07-29 16:59:34,568, DEBUG, POST http://127.0.0.1:55152/session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_147/click {"id": "84158F9E9304707EE9E5D56489C11741_element_147"}
+2023-07-29 16:59:35,242, DEBUG, http://127.0.0.1:55152 "POST /session/c80d2093143faed7e8afec59db86ad34/element/84158F9E9304707EE9E5D56489C11741_element_147/click HTTP/1.1" 200 14
+2023-07-29 16:59:35,243, DEBUG, Finished Request

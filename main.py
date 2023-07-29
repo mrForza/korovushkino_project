@@ -4,7 +4,7 @@ import time
 from datetime import datetime
 
 from dotenv import load_dotenv
-from telegram import Bot
+import telegram
 
 from messages import (
     CHECK_TOKENS_START_TEXT, MISSING_TOKENS_TEXT, CHECK_TOKENS_END_TEXT
@@ -52,7 +52,7 @@ def check_tokens():
 if __name__ == '__main__':
     check_tokens()
     try:
-        bot = Bot(TELEGRAM_TOKEN)
+        bot = telegram.Bot(TELEGRAM_TOKEN)
         parser = Parser(
             link=CMS_LINK,
             email=CMS_LOGIN,
@@ -73,7 +73,8 @@ if __name__ == '__main__':
                     for chat_id in (539288377, 1258274970, 6192766051):
                         bot.send_message(
                             chat_id=chat_id,
-                            text=order.__str__()
+                            text=order.__str__(),
+                            parse_mode=telegram.ParseMode.HTML
                         )
             except Exception as error:
                 logging.debug('Возникла ошибка: {}'.format(error))

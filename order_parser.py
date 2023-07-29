@@ -1,7 +1,6 @@
 import time
 import logging
 
-
 from datetime import datetime as dt
 from messages import (
     CONFIG_PARSER_START_TEXT, CONFIG_PARSER_END_TEXT,
@@ -32,10 +31,10 @@ class Product:
         return self.display_product_data()
 
     def display_product_data(self) -> str:
-        return (f'\n{self.name}\n'
-                f'Цена за 1 шт: {self.price}\n'
-                f'Количество товара: {self.count}\n'
-                f'Доступное количество: {self.available_count}\n')
+        return (f'<b>{self.name}</b>\n'
+                f'Цена за 1 шт: <b>{self.price}</b>\n'
+                f'Количество товара: <b>{self.count}</b>\n'
+                f'Доступное количество: <b>{self.available_count}</b>\n')
 
 
 class Client:
@@ -54,12 +53,12 @@ class Client:
         return self.display_client_info()
 
     def display_client_info(self) -> str:
-        return (f'Имя: {self.name}\n'
-                f'Фамилия: {self.surname}\n'
-                f'Страна: {self.country}\n'
-                f'Город: {self.city}\n'
-                f'Адрес: {self.district}\n'
-                f'Телефон: {self.phone}\n')
+        return (f'Имя: <b>{self.name}</b>\n'
+                f'Фамилия: <b>{self.surname}</b>\n'
+                f'Страна: <b>{self.country}</b>\n'
+                f'Город: <b>{self.city}</b>\n'
+                f'Адрес: <b>{self.district}</b>\n'
+                f'Телефон: <b>{self.phone}</b>\n')
 
 
 class Order:
@@ -84,15 +83,21 @@ class Order:
         return self.display_order_info()
 
     def display_order_info(self) -> str:
-        return (f'Заказ №{self.id}\n'
-                f'Дата заказа: {self.date}\n'
-                f'Код: {self.code}\n'
-                f'Страна доставки: {self.delivering_country}\n'
-                f'К оплате: {self.price}\n'
-                f'Способ оплаты: {self.payment}\n'
-                f'Статус заказа: {self.status}\n\n'
-                f'Клиент: \n{self.client.__str__()}\n'
-                f'Список продуктов: {str(self.products.__repr__())}\n')
+        return (f'<b>Заказ №{self.id}</b>\n'
+                f'Дата заказа: <b>{self.date}</b>\n'
+                f'Код: <b>{self.code}</b>\n'
+                f'Страна доставки: <b>{self.delivering_country}</b>\n'
+                f'К оплате: <b>{self.price}</b>\n'
+                f'Способ оплаты: <b>{self.payment}</b>\n'
+                f'Статус заказа: <b>{self.status}</b>\n\n'
+                f'<b>Клиент:</b> \n{self.client.__str__()}\n'
+                f'<b>Список продуктов:</b> \n{self.display_products()}')
+
+    def display_products(self) -> str:
+        result_string = ''
+        for i, product in enumerate(self.products):
+            result_string += f'<b>№{i}</b>: {product.__str__()}\n'
+        return result_string
 
 
 class Parser:
@@ -257,7 +262,7 @@ class Parser:
         try:
             while True:
                 product_data = []
-                for i in range(2, 6):
+                for i in range(2, 5):
                     product_data.append(
                         self.driver.find_element_by_css_selector(
                             (f'#orderProducts > tbody > '
@@ -265,13 +270,16 @@ class Parser:
                                 f'> td:nth-child({i})')
                         ).text
                     )
-                product_index += 1
                 product_data = tuple(product_data)
-                (title, price, count, available_count) = product_data
+                title, price, count = product_data
                 print(product_data)
                 price = price.replace(' ', '').replace('руб.', '')
                 count = count
-                available_count = available_count
+                available_count = self.driver.find_element_by_css_selector(
+                    f'#orderProducts > tbody > tr:nth-child({product_index}) '
+                    f'> td.productQuantity.product_stock.text-center'
+                ).text
+                product_index += 1
 
                 product = Product(title, price, count, available_count)
                 product_list.append(product)
