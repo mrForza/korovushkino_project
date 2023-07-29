@@ -1,86 +1,83 @@
+import logging
 import os
 import time
+from datetime import datetime
 
-from cryptography.fernet import Fernet
 from dotenv import load_dotenv
-from telegram import Bot
+import telegram
 
+from messages import (
+    CHECK_TOKENS_START_TEXT, MISSING_TOKENS_TEXT, CHECK_TOKENS_END_TEXT
+)
 from order_parser import Parser
 
+CURRENT_DATE = datetime.now().__str__().replace(
+    ' ', '-'
+).replace(':', '-').replace('.', '-')
 
-def generate_access_key():
-    key = Fernet.generate_key()
-    with open('file.key', 'wb') as file:
-        file.write(key)
+logging.basicConfig(
+    format=u'%(asctime)s, %(levelname)s, %(message)s',
+    filemode='w',
+    filename=f'logs/log_{CURRENT_DATE}.log',
+    level=logging.DEBUG
+)
 
-
-def encrypte_private_data(file_name: str):
-    with open('file.key', 'rb') as file_key:
-        key = file_key.read()
-    fernet = Fernet(key)
-
-    with open(file_name, 'rb') as private_data:
-        original_data = private_data.read()
-
-    encrypte_data = fernet.encrypt(original_data)
-
-    with open(file_name, 'wb') as private_data:
-        private_data.write(encrypte_data)
+load_dotenv()
 
 
-def decrypte_private_data(file_name: str) -> list:
-    with open('file.key', 'rb') as file_key:
-        key = file_key.read()
-    fernet = Fernet(key)
+TELEGRAM_TOKEN = os.getenv('token')
 
-    with open(file_name, 'rb') as private_data:
-        encrypte_data = private_data.read()
+CMS_LINK = os.getenv('cms_link')
 
-    decrypte_data: str = str(fernet.decrypt(encrypte_data)).replace('\'', '')
-    return reformat_private_data(decrypte_data)
+CMS_LOGIN = os.getenv('cms_login')
+
+CMS_PASSWORD = os.getenv('cms_password')
 
 
-def reformat_private_data(data: str) -> list:
-    reformatted_data = []
-    first_index = 1
-
-    for i in range(1, len(data)):
-        if (data[i - 1] == '\\' and data[i] == 'n'):
-            reformatted_data.append(data[first_index:i-3])
-            first_index = i + 1
-        elif i == len(data) - 1:
-            reformatted_data.append(data[first_index:])
-    return reformatted_data
+def check_tokens():
+    """Проверяет корректность токенов программы"""
+    logging.debug(CHECK_TOKENS_START_TEXT)
+    for name, value in (
+        ('tg_token', TELEGRAM_TOKEN),
+        ('cms_link', CMS_LINK),
+        ('cms_login', CMS_LOGIN),
+        ('cms_password', CMS_PASSWORD)
+    ):
+        if value is None:
+            logging.critical(MISSING_TOKENS_TEXT.format(name))
+            return
+    logging.debug(CHECK_TOKENS_END_TEXT)
 
 
 if __name__ == '__main__':
-    load_dotenv()
-    # encrypte_private_data('private_data.txt') #Do not uncomment this line!
-    private_data = decrypte_private_data('private_data.txt')
-    TOKEN = os.getenv('token')
-    CHAT_ID = os.getenv('chat_id')
+    check_tokens()
+    try:
+        bot = telegram.Bot(TELEGRAM_TOKEN)
+        parser = Parser(
+            link=CMS_LINK,
+            email=CMS_LOGIN,
+            password=CMS_PASSWORD
+        )
 
-    bot = Bot(TOKEN)
-    bot.send_message(chat_id=os.getenv('chat_id'), text='Привет!')
-    parser = Parser(
-        link=private_data[0],
-        email=private_data[1],
-        password=private_data[2]
-    )
-    parser.configure_parser()
-    order = parser.start_parsing()
-
-    while True:
-        try:
-            parser.driver.refresh()
-            if order is not None:
-                bot.send_message(
-                    chat_id=CHAT_ID,
-                    text=order.__str__()
-                )
-        except Exception as error:
-            print('Возникла ошибка: {}'.format(error))
-        finally:
-            print('#############')
-            parser.return_to_homepage()
-            time.sleep(10)
+        parser.configure_parser()
+        parser.authenticate_parser()
+    except Exception as error:
+        print('Возникла ошибка: {}'.format(error))
+    else:
+        while True:
+            try:
+                parser.driver.refresh()
+                order = parser.handle_order_info()
+                print(order)
+                if order is not None:
+                    for chat_id in (539288377, 1258274970, 6192766051):
+                        bot.send_message(
+                            chat_id=chat_id,
+                            text=order.__str__(),
+                            parse_mode=telegram.ParseMode.HTML
+                        )
+            except Exception as error:
+                logging.debug('Возникла ошибка: {}'.format(error))
+            finally:
+                parser.return_to_homepage()
+                time.sleep(10)

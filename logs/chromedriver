@@ -1,0 +1,1274 @@
+[1690639151.835][INFO]: Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 55152
+[1690639151.835][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1690639152.372][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [  ],
+            "extensions": [  ]
+         },
+         "platformName": "any"
+      },
+      "firstMatch": [ {
+      } ]
+   },
+   "desiredCapabilities": {
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [  ],
+         "extensions": [  ]
+      },
+      "platform": "ANY",
+      "version": ""
+   }
+}
+[1690639152.376][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1690639152.376][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1690639152.379][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\WINDOWS\SystemTemp\scoped_dir20556_1017812359" data:,
+[1690639152.888][WARNING]: This version of ChromeDriver has not been tested with Chrome version 115.
+[1690639152.896][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1690639152.912][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "115.0.5790.110",
+      "chrome": {
+         "chromedriverVersion": "114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052})",
+         "userDataDir": "C:\\WINDOWS\\SystemTemp\\scoped_dir20556_1017812359"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:55158"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "c80d2093143faed7e8afec59db86ad34"
+}
+[1690639152.916][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND Navigate {
+   "url": "https://korovushkino.ru/admin035dilost/index.php?controller=AdminLogin&token=8139f4544de1fc881ebc0a3c684ce2dd"
+}
+[1690639152.916][INFO]: Waiting for pending navigations...
+[1690639152.920][INFO]: Done waiting for pending navigations. Status: ok
+[1690639153.450][INFO]: Waiting for pending navigations...
+[1690639153.768][INFO]: Done waiting for pending navigations. Status: ok
+[1690639153.768][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE Navigate
+[1690639158.782][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#email"
+}
+[1690639158.782][INFO]: Waiting for pending navigations...
+[1690639158.783][INFO]: Done waiting for pending navigations. Status: ok
+[1690639158.793][INFO]: Waiting for pending navigations...
+[1690639158.793][INFO]: Done waiting for pending navigations. Status: ok
+[1690639158.793][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "395FA3136ADB9AC3F129E074B0687A36_element_2"
+}
+[1690639158.795][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#passwd"
+}
+[1690639158.795][INFO]: Waiting for pending navigations...
+[1690639158.795][INFO]: Done waiting for pending navigations. Status: ok
+[1690639158.802][INFO]: Waiting for pending navigations...
+[1690639158.803][INFO]: Done waiting for pending navigations. Status: ok
+[1690639158.803][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "395FA3136ADB9AC3F129E074B0687A36_element_3"
+}
+[1690639158.804][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#submit_login"
+}
+[1690639158.804][INFO]: Waiting for pending navigations...
+[1690639158.804][INFO]: Done waiting for pending navigations. Status: ok
+[1690639158.809][INFO]: Waiting for pending navigations...
+[1690639158.810][INFO]: Done waiting for pending navigations. Status: ok
+[1690639158.810][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "395FA3136ADB9AC3F129E074B0687A36_element_9"
+}
+[1690639163.799][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND TypeElement {
+   "id": "395FA3136ADB9AC3F129E074B0687A36_element_2",
+   "text": "mars4mlech.put@gmail.com",
+   "value": [ "m", "a", "r", "s", "4", "m", "l", "e", "c", "h", ".", "p", "u", "t", "@", "g", "m", "a", "i", "l", ".", "c", "o", "m" ]
+}
+[1690639163.799][INFO]: Waiting for pending navigations...
+[1690639163.801][INFO]: Done waiting for pending navigations. Status: ok
+[1690639163.850][INFO]: Waiting for pending navigations...
+[1690639163.851][INFO]: Done waiting for pending navigations. Status: ok
+[1690639163.851][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE TypeElement
+[1690639163.852][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND TypeElement {
+   "id": "395FA3136ADB9AC3F129E074B0687A36_element_3",
+   "text": "UPf9XHbUc8dyuj6",
+   "value": [ "U", "P", "f", "9", "X", "H", "b", "U", "c", "8", "d", "y", "u", "j", "6" ]
+}
+[1690639163.852][INFO]: Waiting for pending navigations...
+[1690639163.853][INFO]: Done waiting for pending navigations. Status: ok
+[1690639163.893][INFO]: Waiting for pending navigations...
+[1690639163.894][INFO]: Done waiting for pending navigations. Status: ok
+[1690639163.894][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE TypeElement
+[1690639163.895][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND ClickElement {
+   "id": "395FA3136ADB9AC3F129E074B0687A36_element_9"
+}
+[1690639163.895][INFO]: Waiting for pending navigations...
+[1690639163.896][INFO]: Done waiting for pending navigations. Status: ok
+[1690639163.930][INFO]: Waiting for pending navigations...
+[1690639163.931][INFO]: Done waiting for pending navigations. Status: ok
+[1690639163.931][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE ClickElement
+[1690639168.953][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND Refresh {
+}
+[1690639168.954][INFO]: Waiting for pending navigations...
+[1690639168.955][INFO]: Done waiting for pending navigations. Status: ok
+[1690639168.957][INFO]: Waiting for pending navigations...
+[1690639169.593][INFO]: Done waiting for pending navigations. Status: ok
+[1690639169.593][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE Refresh
+[1690639169.594][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#subtab-AdminParentOrders > a"
+}
+[1690639169.594][INFO]: Waiting for pending navigations...
+[1690639169.595][INFO]: Done waiting for pending navigations. Status: ok
+[1690639169.601][INFO]: Waiting for pending navigations...
+[1690639169.603][INFO]: Done waiting for pending navigations. Status: ok
+[1690639169.603][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "E372665FEA487C4E5C750F74B7A429DE_element_40"
+}
+[1690639169.604][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND ClickElement {
+   "id": "E372665FEA487C4E5C750F74B7A429DE_element_40"
+}
+[1690639169.604][INFO]: Waiting for pending navigations...
+[1690639169.604][INFO]: Done waiting for pending navigations. Status: ok
+[1690639169.631][INFO]: Waiting for pending navigations...
+[1690639170.970][INFO]: Done waiting for pending navigations. Status: ok
+[1690639170.970][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE ClickElement
+[1690639170.972][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#table-order > tbody > tr:nth-child(1) > td.pointer.fixed-width-xs.text-center"
+}
+[1690639170.972][INFO]: Waiting for pending navigations...
+[1690639170.973][INFO]: Done waiting for pending navigations. Status: ok
+[1690639170.990][INFO]: Waiting for pending navigations...
+[1690639170.991][INFO]: Done waiting for pending navigations. Status: ok
+[1690639170.991][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_57"
+}
+[1690639170.994][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_57"
+}
+[1690639170.994][INFO]: Waiting for pending navigations...
+[1690639170.995][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.014][INFO]: Waiting for pending navigations...
+[1690639171.014][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.014][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "416"
+[1690639171.018][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#table-order > tbody > tr:nth-child(1) > td:nth-child(3)"
+}
+[1690639171.018][INFO]: Waiting for pending navigations...
+[1690639171.018][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.026][INFO]: Waiting for pending navigations...
+[1690639171.027][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.027][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_58"
+}
+[1690639171.028][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_58"
+}
+[1690639171.028][INFO]: Waiting for pending navigations...
+[1690639171.029][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.035][INFO]: Waiting for pending navigations...
+[1690639171.036][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.036][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "68017"
+[1690639171.037][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#table-order > tbody > tr:nth-child(1) > td:nth-child(4)"
+}
+[1690639171.037][INFO]: Waiting for pending navigations...
+[1690639171.038][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.045][INFO]: Waiting for pending navigations...
+[1690639171.046][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.046][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_59"
+}
+[1690639171.048][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_59"
+}
+[1690639171.048][INFO]: Waiting for pending navigations...
+[1690639171.049][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.054][INFO]: Waiting for pending navigations...
+[1690639171.055][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.055][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "Нет"
+[1690639171.057][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#table-order > tbody > tr:nth-child(1) > td:nth-child(5)"
+}
+[1690639171.057][INFO]: Waiting for pending navigations...
+[1690639171.057][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.063][INFO]: Waiting for pending navigations...
+[1690639171.064][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.064][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_60"
+}
+[1690639171.066][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_60"
+}
+[1690639171.066][INFO]: Waiting for pending navigations...
+[1690639171.066][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.071][INFO]: Waiting for pending navigations...
+[1690639171.073][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.073][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "Россия"
+[1690639171.074][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#table-order > tbody > tr:nth-child(1) > td:nth-child(6)"
+}
+[1690639171.074][INFO]: Waiting for pending navigations...
+[1690639171.075][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.081][INFO]: Waiting for pending navigations...
+[1690639171.082][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.082][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_61"
+}
+[1690639171.083][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_61"
+}
+[1690639171.083][INFO]: Waiting for pending navigations...
+[1690639171.084][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.088][INFO]: Waiting for pending navigations...
+[1690639171.088][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.088][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "Л. Пепко"
+[1690639171.090][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#table-order > tbody > tr:nth-child(1) > td:nth-child(7)"
+}
+[1690639171.090][INFO]: Waiting for pending navigations...
+[1690639171.090][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.096][INFO]: Waiting for pending navigations...
+[1690639171.097][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.097][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_62"
+}
+[1690639171.099][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_62"
+}
+[1690639171.099][INFO]: Waiting for pending navigations...
+[1690639171.099][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.105][INFO]: Waiting for pending navigations...
+[1690639171.105][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.105][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "3 432 руб."
+[1690639171.107][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#table-order > tbody > tr:nth-child(1) > td:nth-child(8)"
+}
+[1690639171.107][INFO]: Waiting for pending navigations...
+[1690639171.107][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.113][INFO]: Waiting for pending navigations...
+[1690639171.114][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.114][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_63"
+}
+[1690639171.115][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_63"
+}
+[1690639171.115][INFO]: Waiting for pending navigations...
+[1690639171.116][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.120][INFO]: Waiting for pending navigations...
+[1690639171.121][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.121][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "Оплата наличными при получении"
+[1690639171.122][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#table-order > tbody > tr:nth-child(1) > td:nth-child(9)"
+}
+[1690639171.122][INFO]: Waiting for pending navigations...
+[1690639171.122][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.128][INFO]: Waiting for pending navigations...
+[1690639171.129][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.129][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_64"
+}
+[1690639171.130][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_64"
+}
+[1690639171.130][INFO]: Waiting for pending navigations...
+[1690639171.130][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.136][INFO]: Waiting for pending navigations...
+[1690639171.136][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.137][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "В обработке"
+[1690639171.138][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#table-order > tbody > tr:nth-child(1) > td:nth-child(10)"
+}
+[1690639171.138][INFO]: Waiting for pending navigations...
+[1690639171.138][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.144][INFO]: Waiting for pending navigations...
+[1690639171.145][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.145][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_65"
+}
+[1690639171.146][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_65"
+}
+[1690639171.146][INFO]: Waiting for pending navigations...
+[1690639171.146][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.152][INFO]: Waiting for pending navigations...
+[1690639171.152][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.152][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "27.07.2023 09:39"
+[1690639171.156][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#table-order > tbody > tr:nth-child(1)"
+}
+[1690639171.156][INFO]: Waiting for pending navigations...
+[1690639171.157][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.163][INFO]: Waiting for pending navigations...
+[1690639171.164][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.164][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_66"
+}
+[1690639171.165][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND ClickElement {
+   "id": "0BBD5BA0BD7750BA6AE3AE74DAED3B79_element_66"
+}
+[1690639171.165][INFO]: Waiting for pending navigations...
+[1690639171.165][INFO]: Done waiting for pending navigations. Status: ok
+[1690639171.199][INFO]: Waiting for pending navigations...
+[1690639172.439][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.439][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE ClickElement
+[1690639172.441][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#addressShipping > div > div > div:nth-child(1)"
+}
+[1690639172.441][INFO]: Waiting for pending navigations...
+[1690639172.442][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.464][INFO]: Waiting for pending navigations...
+[1690639172.464][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.464][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_101"
+}
+[1690639172.466][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_101"
+}
+[1690639172.466][INFO]: Waiting for pending navigations...
+[1690639172.467][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.475][INFO]: Waiting for pending navigations...
+[1690639172.476][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.476][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "Править\nЛариса Пепко\nРоссия\nМосква\nЧечёрский проезд д. 128, корп. 2"
+[1690639172.478][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(1) > td:nth-child(2)"
+}
+[1690639172.478][INFO]: Waiting for pending navigations...
+[1690639172.478][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.486][INFO]: Waiting for pending navigations...
+[1690639172.487][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.487][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_104"
+}
+[1690639172.489][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_104"
+}
+[1690639172.489][INFO]: Waiting for pending navigations...
+[1690639172.489][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.496][INFO]: Waiting for pending navigations...
+[1690639172.497][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.497][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "Молоко коровье 1 л\nАртикул: molkor"
+[1690639172.499][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(1) > td:nth-child(3)"
+}
+[1690639172.499][INFO]: Waiting for pending navigations...
+[1690639172.499][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.507][INFO]: Waiting for pending navigations...
+[1690639172.507][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.507][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_105"
+}
+[1690639172.509][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_105"
+}
+[1690639172.509][INFO]: Waiting for pending navigations...
+[1690639172.509][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.516][INFO]: Waiting for pending navigations...
+[1690639172.517][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.517][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "97 руб."
+[1690639172.518][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(1) > td:nth-child(4)"
+}
+[1690639172.518][INFO]: Waiting for pending navigations...
+[1690639172.519][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.526][INFO]: Waiting for pending navigations...
+[1690639172.527][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.527][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_106"
+}
+[1690639172.528][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_106"
+}
+[1690639172.528][INFO]: Waiting for pending navigations...
+[1690639172.528][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.534][INFO]: Waiting for pending navigations...
+[1690639172.535][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.535][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "1"
+[1690639172.536][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(1) > td.productQuantity.product_stock.text-center"
+}
+[1690639172.536][INFO]: Waiting for pending navigations...
+[1690639172.537][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.544][INFO]: Waiting for pending navigations...
+[1690639172.545][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.545][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_107"
+}
+[1690639172.546][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_107"
+}
+[1690639172.546][INFO]: Waiting for pending navigations...
+[1690639172.547][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.555][INFO]: Waiting for pending navigations...
+[1690639172.555][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.555][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "672"
+[1690639172.557][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(2) > td:nth-child(2)"
+}
+[1690639172.557][INFO]: Waiting for pending navigations...
+[1690639172.557][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.565][INFO]: Waiting for pending navigations...
+[1690639172.566][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.566][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_108"
+}
+[1690639172.569][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_108"
+}
+[1690639172.569][INFO]: Waiting for pending navigations...
+[1690639172.570][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.583][INFO]: Waiting for pending navigations...
+[1690639172.585][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.585][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "Масло сливочное натуральное 82,5% 0,5 кг\nАртикул: maslo82.5"
+[1690639172.587][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(2) > td:nth-child(3)"
+}
+[1690639172.587][INFO]: Waiting for pending navigations...
+[1690639172.587][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.595][INFO]: Waiting for pending navigations...
+[1690639172.596][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.596][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_109"
+}
+[1690639172.598][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_109"
+}
+[1690639172.598][INFO]: Waiting for pending navigations...
+[1690639172.599][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.606][INFO]: Waiting for pending navigations...
+[1690639172.607][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.607][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "500 руб."
+[1690639172.608][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(2) > td:nth-child(4)"
+}
+[1690639172.608][INFO]: Waiting for pending navigations...
+[1690639172.609][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.616][INFO]: Waiting for pending navigations...
+[1690639172.617][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.617][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_110"
+}
+[1690639172.619][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_110"
+}
+[1690639172.619][INFO]: Waiting for pending navigations...
+[1690639172.619][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.625][INFO]: Waiting for pending navigations...
+[1690639172.625][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.625][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "1"
+[1690639172.627][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(2) > td.productQuantity.product_stock.text-center"
+}
+[1690639172.627][INFO]: Waiting for pending navigations...
+[1690639172.627][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.634][INFO]: Waiting for pending navigations...
+[1690639172.635][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.635][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_111"
+}
+[1690639172.636][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_111"
+}
+[1690639172.636][INFO]: Waiting for pending navigations...
+[1690639172.637][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.643][INFO]: Waiting for pending navigations...
+[1690639172.643][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.643][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "755"
+[1690639172.645][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(3) > td:nth-child(2)"
+}
+[1690639172.645][INFO]: Waiting for pending navigations...
+[1690639172.645][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.652][INFO]: Waiting for pending navigations...
+[1690639172.653][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.653][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_112"
+}
+[1690639172.655][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_112"
+}
+[1690639172.655][INFO]: Waiting for pending navigations...
+[1690639172.655][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.661][INFO]: Waiting for pending navigations...
+[1690639172.661][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.661][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "Сыр Адыгейский 300 гр.\nАртикул: adigeiskii"
+[1690639172.662][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(3) > td:nth-child(3)"
+}
+[1690639172.662][INFO]: Waiting for pending navigations...
+[1690639172.663][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.670][INFO]: Waiting for pending navigations...
+[1690639172.671][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.671][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_113"
+}
+[1690639172.672][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_113"
+}
+[1690639172.672][INFO]: Waiting for pending navigations...
+[1690639172.673][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.678][INFO]: Waiting for pending navigations...
+[1690639172.679][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.679][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "180 руб."
+[1690639172.680][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(3) > td:nth-child(4)"
+}
+[1690639172.680][INFO]: Waiting for pending navigations...
+[1690639172.680][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.688][INFO]: Waiting for pending navigations...
+[1690639172.689][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.689][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_114"
+}
+[1690639172.690][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_114"
+}
+[1690639172.690][INFO]: Waiting for pending navigations...
+[1690639172.691][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.696][INFO]: Waiting for pending navigations...
+[1690639172.697][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.697][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "1"
+[1690639172.698][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(3) > td.productQuantity.product_stock.text-center"
+}
+[1690639172.699][INFO]: Waiting for pending navigations...
+[1690639172.699][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.706][INFO]: Waiting for pending navigations...
+[1690639172.707][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.707][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_115"
+}
+[1690639172.708][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_115"
+}
+[1690639172.708][INFO]: Waiting for pending navigations...
+[1690639172.709][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.714][INFO]: Waiting for pending navigations...
+[1690639172.714][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.714][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "966"
+[1690639172.716][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(4) > td:nth-child(2)"
+}
+[1690639172.716][INFO]: Waiting for pending navigations...
+[1690639172.717][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.724][INFO]: Waiting for pending navigations...
+[1690639172.724][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.725][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_116"
+}
+[1690639172.726][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_116"
+}
+[1690639172.726][INFO]: Waiting for pending navigations...
+[1690639172.726][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.732][INFO]: Waiting for pending navigations...
+[1690639172.733][INFO]: Done waiting for pending navigations. Status: ok
+[1690639172.733][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "Колбаса свиная сыровяленая 0,5 кг"
+[1690639172.734][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(4) > td:nth-child(3)"
+}
+[1690639172.734][INFO]: Waiting for pending navigations...
+[1690639172.735][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.387][INFO]: Waiting for pending navigations...
+[1690639173.387][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.387][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_117"
+}
+[1690639173.388][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_117"
+}
+[1690639173.388][INFO]: Waiting for pending navigations...
+[1690639173.389][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.394][INFO]: Waiting for pending navigations...
+[1690639173.395][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.395][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "525 руб."
+[1690639173.396][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(4) > td:nth-child(4)"
+}
+[1690639173.396][INFO]: Waiting for pending navigations...
+[1690639173.396][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.402][INFO]: Waiting for pending navigations...
+[1690639173.403][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.403][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_118"
+}
+[1690639173.404][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_118"
+}
+[1690639173.404][INFO]: Waiting for pending navigations...
+[1690639173.405][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.409][INFO]: Waiting for pending navigations...
+[1690639173.410][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.410][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "1"
+[1690639173.411][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(4) > td.productQuantity.product_stock.text-center"
+}
+[1690639173.411][INFO]: Waiting for pending navigations...
+[1690639173.411][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.418][INFO]: Waiting for pending navigations...
+[1690639173.419][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.419][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_119"
+}
+[1690639173.421][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_119"
+}
+[1690639173.421][INFO]: Waiting for pending navigations...
+[1690639173.421][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.426][INFO]: Waiting for pending navigations...
+[1690639173.427][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.427][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "68"
+[1690639173.428][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(5) > td:nth-child(2)"
+}
+[1690639173.428][INFO]: Waiting for pending navigations...
+[1690639173.428][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.436][INFO]: Waiting for pending navigations...
+[1690639173.436][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.436][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_120"
+}
+[1690639173.438][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_120"
+}
+[1690639173.438][INFO]: Waiting for pending navigations...
+[1690639173.438][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.444][INFO]: Waiting for pending navigations...
+[1690639173.445][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.445][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "Йогурт 3,5% (клубника) 250 гр.\nАртикул: iogurtklubnica"
+[1690639173.446][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(5) > td:nth-child(3)"
+}
+[1690639173.446][INFO]: Waiting for pending navigations...
+[1690639173.447][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.454][INFO]: Waiting for pending navigations...
+[1690639173.454][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.454][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_121"
+}
+[1690639173.456][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_121"
+}
+[1690639173.456][INFO]: Waiting for pending navigations...
+[1690639173.456][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.462][INFO]: Waiting for pending navigations...
+[1690639173.462][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.462][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "65 руб."
+[1690639173.464][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(5) > td:nth-child(4)"
+}
+[1690639173.464][INFO]: Waiting for pending navigations...
+[1690639173.464][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.471][INFO]: Waiting for pending navigations...
+[1690639173.472][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.472][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_122"
+}
+[1690639173.473][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_122"
+}
+[1690639173.473][INFO]: Waiting for pending navigations...
+[1690639173.474][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.479][INFO]: Waiting for pending navigations...
+[1690639173.479][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.479][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "3"
+[1690639173.481][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(5) > td.productQuantity.product_stock.text-center"
+}
+[1690639173.481][INFO]: Waiting for pending navigations...
+[1690639173.482][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.488][INFO]: Waiting for pending navigations...
+[1690639173.489][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.489][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_123"
+}
+[1690639173.490][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_123"
+}
+[1690639173.490][INFO]: Waiting for pending navigations...
+[1690639173.490][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.495][INFO]: Waiting for pending navigations...
+[1690639173.495][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.495][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "911"
+[1690639173.497][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(6) > td:nth-child(2)"
+}
+[1690639173.497][INFO]: Waiting for pending navigations...
+[1690639173.497][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.504][INFO]: Waiting for pending navigations...
+[1690639173.504][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.504][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_124"
+}
+[1690639173.506][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_124"
+}
+[1690639173.506][INFO]: Waiting for pending navigations...
+[1690639173.506][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.512][INFO]: Waiting for pending navigations...
+[1690639173.512][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.512][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "Творог ГОСТ 5% классический 0,5 кг\nАртикул: tvorog5"
+[1690639173.514][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(6) > td:nth-child(3)"
+}
+[1690639173.514][INFO]: Waiting for pending navigations...
+[1690639173.514][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.521][INFO]: Waiting for pending navigations...
+[1690639173.522][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.522][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_125"
+}
+[1690639173.523][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_125"
+}
+[1690639173.523][INFO]: Waiting for pending navigations...
+[1690639173.524][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.530][INFO]: Waiting for pending navigations...
+[1690639173.530][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.530][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "210 руб."
+[1690639173.531][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(6) > td:nth-child(4)"
+}
+[1690639173.532][INFO]: Waiting for pending navigations...
+[1690639173.532][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.539][INFO]: Waiting for pending navigations...
+[1690639173.539][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.539][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_126"
+}
+[1690639173.541][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_126"
+}
+[1690639173.541][INFO]: Waiting for pending navigations...
+[1690639173.542][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.547][INFO]: Waiting for pending navigations...
+[1690639173.547][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.547][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "1"
+[1690639173.549][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(6) > td.productQuantity.product_stock.text-center"
+}
+[1690639173.549][INFO]: Waiting for pending navigations...
+[1690639173.550][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.556][INFO]: Waiting for pending navigations...
+[1690639173.558][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.558][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_127"
+}
+[1690639173.560][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_127"
+}
+[1690639173.560][INFO]: Waiting for pending navigations...
+[1690639173.560][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.565][INFO]: Waiting for pending navigations...
+[1690639173.566][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.566][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "928"
+[1690639173.567][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(7) > td:nth-child(2)"
+}
+[1690639173.567][INFO]: Waiting for pending navigations...
+[1690639173.568][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.575][INFO]: Waiting for pending navigations...
+[1690639173.575][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.575][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_128"
+}
+[1690639173.577][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_128"
+}
+[1690639173.577][INFO]: Waiting for pending navigations...
+[1690639173.577][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.584][INFO]: Waiting for pending navigations...
+[1690639173.584][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.584][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "Сметана 20% ГОСТ (0,25 кг)\nАртикул: demo_6"
+[1690639173.586][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(7) > td:nth-child(3)"
+}
+[1690639173.586][INFO]: Waiting for pending navigations...
+[1690639173.586][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.594][INFO]: Waiting for pending navigations...
+[1690639173.594][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.594][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_129"
+}
+[1690639173.596][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_129"
+}
+[1690639173.596][INFO]: Waiting for pending navigations...
+[1690639173.596][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.603][INFO]: Waiting for pending navigations...
+[1690639173.604][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.604][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "100 руб."
+[1690639173.606][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(7) > td:nth-child(4)"
+}
+[1690639173.606][INFO]: Waiting for pending navigations...
+[1690639173.606][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.613][INFO]: Waiting for pending navigations...
+[1690639173.613][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.613][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_130"
+}
+[1690639173.615][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_130"
+}
+[1690639173.615][INFO]: Waiting for pending navigations...
+[1690639173.616][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.622][INFO]: Waiting for pending navigations...
+[1690639173.622][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.622][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "2"
+[1690639173.624][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(7) > td.productQuantity.product_stock.text-center"
+}
+[1690639173.624][INFO]: Waiting for pending navigations...
+[1690639173.625][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.632][INFO]: Waiting for pending navigations...
+[1690639173.632][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.632][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_131"
+}
+[1690639173.634][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_131"
+}
+[1690639173.634][INFO]: Waiting for pending navigations...
+[1690639173.634][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.639][INFO]: Waiting for pending navigations...
+[1690639173.640][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.640][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "713"
+[1690639173.641][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(8) > td:nth-child(2)"
+}
+[1690639173.641][INFO]: Waiting for pending navigations...
+[1690639173.641][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.648][INFO]: Waiting for pending navigations...
+[1690639173.649][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.649][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_132"
+}
+[1690639173.650][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_132"
+}
+[1690639173.650][INFO]: Waiting for pending navigations...
+[1690639173.651][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.657][INFO]: Waiting for pending navigations...
+[1690639173.657][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.657][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "Масло топленое 99% (250 гр)\nАртикул: maslotoplenoe"
+[1690639173.659][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(8) > td:nth-child(3)"
+}
+[1690639173.659][INFO]: Waiting for pending navigations...
+[1690639173.659][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.667][INFO]: Waiting for pending navigations...
+[1690639173.667][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.667][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_133"
+}
+[1690639173.669][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_133"
+}
+[1690639173.669][INFO]: Waiting for pending navigations...
+[1690639173.669][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.675][INFO]: Waiting for pending navigations...
+[1690639173.676][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.676][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "325 руб."
+[1690639173.677][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(8) > td:nth-child(4)"
+}
+[1690639173.677][INFO]: Waiting for pending navigations...
+[1690639173.677][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.685][INFO]: Waiting for pending navigations...
+[1690639173.685][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.685][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_134"
+}
+[1690639173.687][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_134"
+}
+[1690639173.687][INFO]: Waiting for pending navigations...
+[1690639173.687][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.692][INFO]: Waiting for pending navigations...
+[1690639173.693][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.693][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "1"
+[1690639173.695][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(8) > td.productQuantity.product_stock.text-center"
+}
+[1690639173.695][INFO]: Waiting for pending navigations...
+[1690639173.695][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.702][INFO]: Waiting for pending navigations...
+[1690639173.702][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.702][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_135"
+}
+[1690639173.704][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_135"
+}
+[1690639173.704][INFO]: Waiting for pending navigations...
+[1690639173.704][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.709][INFO]: Waiting for pending navigations...
+[1690639173.709][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.709][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "973"
+[1690639173.711][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(9) > td:nth-child(2)"
+}
+[1690639173.711][INFO]: Waiting for pending navigations...
+[1690639173.711][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.718][INFO]: Waiting for pending navigations...
+[1690639173.719][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.719][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_136"
+}
+[1690639173.720][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_136"
+}
+[1690639173.720][INFO]: Waiting for pending navigations...
+[1690639173.721][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.726][INFO]: Waiting for pending navigations...
+[1690639173.727][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.727][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "Цыплёнок охлаждённый (0,6 - 0,9 кг) Кг\nАртикул: ciplenokohl"
+[1690639173.728][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(9) > td:nth-child(3)"
+}
+[1690639173.728][INFO]: Waiting for pending navigations...
+[1690639173.728][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.736][INFO]: Waiting for pending navigations...
+[1690639173.737][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.737][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_137"
+}
+[1690639173.739][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_137"
+}
+[1690639173.739][INFO]: Waiting for pending navigations...
+[1690639173.739][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.745][INFO]: Waiting for pending navigations...
+[1690639173.746][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.746][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "350 руб."
+[1690639173.747][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(9) > td:nth-child(4)"
+}
+[1690639173.747][INFO]: Waiting for pending navigations...
+[1690639173.748][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.755][INFO]: Waiting for pending navigations...
+[1690639173.756][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.756][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_138"
+}
+[1690639173.757][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_138"
+}
+[1690639173.757][INFO]: Waiting for pending navigations...
+[1690639173.758][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.763][INFO]: Waiting for pending navigations...
+[1690639173.763][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.763][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "3"
+[1690639173.765][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(9) > td.productQuantity.product_stock.text-center"
+}
+[1690639173.765][INFO]: Waiting for pending navigations...
+[1690639173.765][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.772][INFO]: Waiting for pending navigations...
+[1690639173.773][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.773][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_139"
+}
+[1690639173.774][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_139"
+}
+[1690639173.774][INFO]: Waiting for pending navigations...
+[1690639173.775][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.780][INFO]: Waiting for pending navigations...
+[1690639173.781][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.781][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "916"
+[1690639173.782][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(10) > td:nth-child(2)"
+}
+[1690639173.782][INFO]: Waiting for pending navigations...
+[1690639173.783][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.790][INFO]: Waiting for pending navigations...
+[1690639173.791][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.791][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_140"
+}
+[1690639173.793][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_140"
+}
+[1690639173.793][INFO]: Waiting for pending navigations...
+[1690639173.793][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.799][INFO]: Waiting for pending navigations...
+[1690639173.800][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.800][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "Яйцо куриное домашнее 10шт\nАртикул: yaicokur"
+[1690639173.801][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(10) > td:nth-child(3)"
+}
+[1690639173.801][INFO]: Waiting for pending navigations...
+[1690639173.802][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.808][INFO]: Waiting for pending navigations...
+[1690639173.808][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.808][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_141"
+}
+[1690639173.810][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_141"
+}
+[1690639173.810][INFO]: Waiting for pending navigations...
+[1690639173.810][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.816][INFO]: Waiting for pending navigations...
+[1690639173.816][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.816][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "150 руб."
+[1690639173.818][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(10) > td:nth-child(4)"
+}
+[1690639173.818][INFO]: Waiting for pending navigations...
+[1690639173.818][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.825][INFO]: Waiting for pending navigations...
+[1690639173.825][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.825][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_142"
+}
+[1690639173.827][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_142"
+}
+[1690639173.827][INFO]: Waiting for pending navigations...
+[1690639173.827][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.832][INFO]: Waiting for pending navigations...
+[1690639173.833][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.833][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "1"
+[1690639173.834][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(10) > td.productQuantity.product_stock.text-center"
+}
+[1690639173.834][INFO]: Waiting for pending navigations...
+[1690639173.835][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.842][INFO]: Waiting for pending navigations...
+[1690639173.842][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.842][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_143"
+}
+[1690639173.844][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_143"
+}
+[1690639173.844][INFO]: Waiting for pending navigations...
+[1690639173.844][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.850][INFO]: Waiting for pending navigations...
+[1690639173.850][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.850][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText "863"
+[1690639173.852][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(11) > td:nth-child(2)"
+}
+[1690639173.852][INFO]: Waiting for pending navigations...
+[1690639173.852][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.863][INFO]: Waiting for pending navigations...
+[1690639173.874][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.874][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_144"
+}
+[1690639173.876][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_144"
+}
+[1690639173.876][INFO]: Waiting for pending navigations...
+[1690639173.876][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.883][INFO]: Waiting for pending navigations...
+[1690639173.883][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.883][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText ""
+[1690639173.885][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(11) > td:nth-child(3)"
+}
+[1690639173.885][INFO]: Waiting for pending navigations...
+[1690639173.886][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.893][INFO]: Waiting for pending navigations...
+[1690639173.894][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.894][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_145"
+}
+[1690639173.895][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_145"
+}
+[1690639173.895][INFO]: Waiting for pending navigations...
+[1690639173.896][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.901][INFO]: Waiting for pending navigations...
+[1690639173.901][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.901][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText ""
+[1690639173.903][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(11) > td:nth-child(4)"
+}
+[1690639173.903][INFO]: Waiting for pending navigations...
+[1690639173.903][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.910][INFO]: Waiting for pending navigations...
+[1690639173.911][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.911][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_146"
+}
+[1690639173.912][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND GetElementText {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_146"
+}
+[1690639173.912][INFO]: Waiting for pending navigations...
+[1690639173.913][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.918][INFO]: Waiting for pending navigations...
+[1690639173.918][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.918][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE GetElementText ""
+[1690639173.920][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#orderProducts > tbody > tr:nth-child(11) > td.productQuantity.product_stock.text-center"
+}
+[1690639173.920][INFO]: Waiting for pending navigations...
+[1690639173.921][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.928][INFO]: Waiting for pending navigations...
+[1690639173.929][INFO]: Done waiting for pending navigations. Status: ok
+[1690639173.929][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#orderProducts > tbody > tr:nth-child(11) > td.productQuantity.product_stock.text-center"}
+  (Session info: chrome=115.0.5790.110)
+[1690639174.555][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#subtab-AdminParentOrders > a"
+}
+[1690639174.555][INFO]: Waiting for pending navigations...
+[1690639174.556][INFO]: Done waiting for pending navigations. Status: ok
+[1690639174.561][INFO]: Waiting for pending navigations...
+[1690639174.562][INFO]: Done waiting for pending navigations. Status: ok
+[1690639174.562][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "84158F9E9304707EE9E5D56489C11741_element_147"
+}
+[1690639174.564][INFO]: [c80d2093143faed7e8afec59db86ad34] COMMAND ClickElement {
+   "id": "84158F9E9304707EE9E5D56489C11741_element_147"
+}
+[1690639174.564][INFO]: Waiting for pending navigations...
+[1690639174.564][INFO]: Done waiting for pending navigations. Status: ok
+[1690639174.588][INFO]: Waiting for pending navigations...
+[1690639175.235][INFO]: Done waiting for pending navigations. Status: ok
+[1690639175.235][INFO]: [c80d2093143faed7e8afec59db86ad34] RESPONSE ClickElement
